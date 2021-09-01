@@ -1,25 +1,19 @@
 general:
-  logo_image: /images/picaron-studio-4.png
-  menu_image: /images/picaron-studio40.jpg
+  logo_image: https://source.unsplash.com/8Ogfqvw15Rg/1600x1600
+  menu_image: https://source.unsplash.com/8Ogfqvw15Rg/1600x1600
 seo:
-  site_name: Picaron Studio | Brand & Web Design in Adelaide
-  title: Picaron Studio | Brand & Web Design in Adelaide
+  site_name: Peruvian Bowls | Ready Meals in Brisbane
+  title: Peruvian Bowls | Ready Meals in Brisbane
   description: >-
     Custom coded websites & unique brands created by a Peruvian couple and based
     in Adelaide, Australia.
-  keywords: >-
-    Picaron Studio, Web Design in Adelaide, Branding services in Adelaide,
-    Independent Graphic Design Studio in Adelaide, Coded Websites in Adelaide,
-    Branding for small businesses Adelaide, custom code websites South
-    Australia, LGBT business Adelaide, LGBT business South Australia, Latin
-    American Graphic Design Studio in Australia, Peruvian Graphic and web design
-    studio in Australia
-  social_image: /logo-picaron-2.jpg
+  keywords:
+  social_image:
   author:
   favicon_image:
 social:
-  instagram_url: https://www.instagram.com/picaronstudio
-  facebook_url: https://www.facebook.com/picaronstudio
+  instagram_url: https://www.instagram.com/peruvianbowls
+  facebook_url: https://www.facebook.com/peruvianbowls
   youtube_url:
   pinterest_url:
   twitter_url:
@@ -29,20 +23,15 @@ design:
   dark-text_color: '#303030'
   grey-text_color: '#4a494a'
   light-text_color: '#ffffff'
-  orange-text_color: '#ff9602'
-  pink-text_color: '#fc41c6'
-  light-pink-text_color: '#fd8cdd'
-  green_color: '#668364'
-  light-green_color: '#809b7e'
-  orange_color: '#ffb64f'
-  orange-light_color: '#ffd69c'
-  pink_color: '#fc41c6'
-  beige_color: '#f3eee9'
-  light_color: '#f7f8f8'
+  beige-text_color: '#FCF3E2'
+  red-text_color: '#EC4B33'
+  blue-text_color: '#2F76B7'
+  yellow-text_color: '#F9D749'
+  blue_color: '#2F76B7'
+  red_color: '#EC4B33'
+  beige_color: '#FCF3E2'
+  yellow_color: '#F9D749'
+  light-red_color: '#EE887F'
+  light-yellow_color: '#F5E18D'
+  light_color: '#FFFDF8'
   white_color: '#ffffff'
-  page-name-font:
-  text-font:
-technical:
-  google-fonts:
-  google-analytics:
-  stuff-for-head:

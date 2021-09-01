@@ -1,0 +1,38 @@
+<!-- Site Header -->
+
+<header class="grid">
+
+    <div class="col-1_md-2_sm-4-middle-left" data-aos="fade-right">
+        <a href="/index.html" class="logo">
+            <img src="{{ site.data.site-settings.general.logo_image }}"></img>
+        </a>
+    </div>
+
+    <nav class="col-10-middle right">
+        <a href="{{ site.data.navigation.picaron-menu.link-2.url }}"> {{ site.data.navigation.picaron-menu.link-2.name }} </a>
+        <a href="{{ site.data.navigation.picaron-menu.link-3.url }}"> {{ site.data.navigation.picaron-menu.link-3.name }} </a>
+        <a href="{{ site.data.navigation.picaron-menu.link-4.url }}"> {{ site.data.navigation.picaron-menu.link-4.name }} </a>
+        <a href="{{ site.data.navigation.picaron-menu.link-6.url }}"> {{ site.data.navigation.picaron-menu.link-6.name }} </a>
+        <a href="{{ site.data.site-settings.social.instagram_url }}">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="{{ site.data.site-settings.social.facebook_url }}">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </nav>
+
+    <div class="col-2 right hide-sm">
+        <div class="circle-button">
+            <i class="fas fa-grip-lines"></i>
+        </div>
+    </div>
+
+
+</header>
+  
+
+
+<!--------------------  Picaron Menu (Responsive) -------------------->
+   
+{% include picaron-menu.html %}
+

@@ -3,24 +3,20 @@ picaron-menu:
     name: Home
     url: /index
   link-2: 
-    name: Portfolio
-    url: /portfolio
+    name: Menu
+    url: /menu
   link-3: 
+    name: Meal Plans
+    url: /meal-plans
+  link-4: 
+    name: Delivery
+    url: /delivery
+  link-6: 
     name: About
     url: /about
-  link-4: 
-    name: Services
-    url: /services
-  link-6: 
-    name: Contact
-    url: /contact
 social:
   instagram: true
   facebook: true
   youtube: false
   pinterest: false
   twitter: false
-left-menu:
-  link-1: Portfolio
-  link-2: About
-  link-3: Services
