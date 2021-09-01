@@ -88,3 +88,8 @@ $("#submit").click(function(){
     alert("Thank you for suscribing");
   
 });
+
+
+
+//  SHOPIFY CODE
+

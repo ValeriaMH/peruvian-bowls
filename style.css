@@ -852,7 +852,6 @@ input {
   display: block;
   width: 100%;
   font-size: 1rem;
-  vertical-align: top;
 }
 
 input:focus,
@@ -1116,28 +1115,4 @@ opacity: 0.5
       padding-bottom: 5%;
     }
 
-}
-
-
-
-
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
-  @media {
-
-      a:any-link {
-        text-decoration: none;
-      }
-
   }
-}
-
-@media not all and (min-resolution:.001dpcm) { 
-    @media {
-
-      a:any-link {
-        text-decoration: none;
-      }
-
-
-}
-}
