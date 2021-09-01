@@ -133,6 +133,15 @@ section { position: relative; }
   padding: 0;
 }
 
+.bg-over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0%;
+  right: 0%;
+}
+
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
     background-image: url('https://source.unsplash.com/8Ogfqvw15Rg/1600x1600');
