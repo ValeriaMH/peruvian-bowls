@@ -1,0 +1,87 @@
+
+<!------------ Technical Metadata  --------------------------------->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+<!------------ SEO Metadata  --------------------------------->
+<title> {{page.seo.title | default: site.data.site-settings.seo.title }} </title> 
+<meta name="description" content="{{page.seo.description | default: site.data.site-settings.seo.description }}">
+<meta name="keywords" content="{{page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
+
+{% if page.seo.hide-from-google == true %}
+    <meta name="robots" content="noindex, nofollow">
+{% else %}
+     <meta name="robots" content="index, follow">
+{% endif %}
+
+<!------------  Social media sharing META Tags ------------>
+<meta property="og:title" content="{{ page.title | default: site.data.site-settings.seo.title }}">
+<meta property="og:description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}"> 
+<meta property="og:image" content="{{ page.seo.social_image | default: site.data.site-settings.seo.social_image }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:card" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
+<meta name="og:site_name" content="{{ site.data.site-settings.seo.site_name }}">
+<link rel="icon" type="image/png" href="{{ site.data.site-settings.seo.favicon_image }}">
+
+
+<!------------ Pinterest Meta Tags ------------>
+<meta property="article:author" content="{{ page.author | default: site.seo.author }}" />
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z73CZ85XHM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z73CZ85XHM');
+</script>
+
+<!-- Metadata for Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#fc41c6">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Picaron Studio">
+<meta name="application-name" content="Picaron Studio">
+<meta name="msapplication-TileColor" content="#f7f8f8">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+<meta name="theme-color" content="#f7f8f8">
+
+<!-- This is our fontawesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Gridlex for our flexbox grid -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+<!-- Google Fonts - 'Courier Prime', monospace (400,700) - 'Mukta Mahee', sans-serif (200 - 800) -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Animate on scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--- Slick Slider Main CSS that handles all the functionality --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--- Slick theme that handles the way everything slides. Optional but very helpful --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+
+<!-- This is our CSS stylesheet, this always goes last -->
+<!-- Custom Stylesheet  -->
+<link rel="stylesheet" type="text/css" href="/editor.css" />
+<link rel="stylesheet" type="text/css" href="/style.css" />

@@ -1,0 +1,48 @@
+general:
+  logo_image: /images/picaron-studio-4.png
+  menu_image: /images/picaron-studio40.jpg
+seo:
+  site_name: Picaron Studio | Brand & Web Design in Adelaide
+  title: Picaron Studio | Brand & Web Design in Adelaide
+  description: >-
+    Custom coded websites & unique brands created by a Peruvian couple and based
+    in Adelaide, Australia.
+  keywords: >-
+    Picaron Studio, Web Design in Adelaide, Branding services in Adelaide,
+    Independent Graphic Design Studio in Adelaide, Coded Websites in Adelaide,
+    Branding for small businesses Adelaide, custom code websites South
+    Australia, LGBT business Adelaide, LGBT business South Australia, Latin
+    American Graphic Design Studio in Australia, Peruvian Graphic and web design
+    studio in Australia
+  social_image: /logo-picaron-2.jpg
+  author:
+  favicon_image:
+social:
+  instagram_url: https://www.instagram.com/picaronstudio
+  facebook_url: https://www.facebook.com/picaronstudio
+  youtube_url:
+  pinterest_url:
+  twitter_url:
+  linkedin_url:
+  instagram-embed:
+design:
+  dark-text_color: '#303030'
+  grey-text_color: '#4a494a'
+  light-text_color: '#ffffff'
+  orange-text_color: '#ff9602'
+  pink-text_color: '#fc41c6'
+  light-pink-text_color: '#fd8cdd'
+  green_color: '#668364'
+  light-green_color: '#809b7e'
+  orange_color: '#ffb64f'
+  orange-light_color: '#ffd69c'
+  pink_color: '#fc41c6'
+  beige_color: '#f3eee9'
+  light_color: '#f7f8f8'
+  white_color: '#ffffff'
+  page-name-font:
+  text-font:
+technical:
+  google-fonts:
+  google-analytics:
+  stuff-for-head:

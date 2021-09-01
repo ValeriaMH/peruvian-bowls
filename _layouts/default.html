@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!-- This is the head of our html where we add external resources and metadata -->
+<head>
+
+    {% include head.html %}
+
+</head>
+<!-- This is the body, this is where all of your page content goes -->
+<body>
+
+    <!-- Left side Menu -->
+    
+    <nav class="center vertical hide-sm">
+      <a href="/portfolio.html"> Portfolio </a>
+      <a href="/about.html"> About </a>
+      <a href="/services.html"> Services </a>
+    </nav>  
+ 
+
+    {% include inline-styles.html %}
+
+    {{ content }}
+
+      <!--------------------  Footer -------------------->
+      
+    {% include site-footer.html %}
+
+    <!-- Add jQuery -->
+    
+    {% include body-scripts.html %}
+
+</body>
+
+</html>
