@@ -1,13 +1,13 @@
 // Mobile menu
 
 $( document ).ready(function() {
-
   $('.hamburger').click(function(){
-  	$('.mobile-menu').fadeToggle(100);
-  	$(this).toggleClass('active');
+    $('.mobile-menu').fadeToggle(100);
+    $(this).toggleClass('active');
+  });
 });
 
-});
+
 
 
 

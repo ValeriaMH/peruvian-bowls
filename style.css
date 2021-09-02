@@ -372,15 +372,22 @@ p:last-child {
 /* Unique Typography Styles  */
 
 .big-bold {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.medium-bold {
   font-size: 3rem;
   font-weight: 700;
 }
 
+.text-15 {
+  font-size: 1.5rem;
+}
+
 .highlight {
-  background-color: rgb(240, 240, 245);
-  display: inline-block;
-  padding: 0.5rem;
-  margin: 2px;
+  background-color: var(--light-yellow);
+  padding: 0.1rem;
 }
 
 .emphasis { 
@@ -531,10 +538,6 @@ a {
     text-decoration: rgba(0,0,0,0);
 }
 
-a:hover {
-  color: var(--pink-text);
-}
-
 p a {
     text-decoration: none;
 }
@@ -549,16 +552,23 @@ p a:hover {
   text-decoration: none;
 }
 
-.hover a:hover {
-  color: var(--pink-text);
-}
-
 .button { 
     display: inline-block;
     text-decoration: none;
-    border-bottom: 1px solid var(--dark-text);
+    border: 1px solid var(--beige);
+    background-color: var(--beige);
+    padding: 0.8rem 2rem;
     transition: 0.3s;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.button:hover {
+  border: 1px solid var(--beige-text);
+  background-color: var(--dark-text);
+  color: var(--beige-text);
 }
 
 .button-pink { 
@@ -571,10 +581,6 @@ p a:hover {
   border-radius: 5px;
   color: white;
   transition: 0.3s;
-}
-
-.button:hover {
-    border-bottom: 1px solid var(--pink-text);
 }
 
 .button-pink:hover {
@@ -663,21 +669,19 @@ nav a:hover {
 }
 
 .mobile-menu {
-  display: none; 
-  background-color: var(--light-yellow);
-  padding: 5%;
-  position: fixed; 
-  z-index: 2;
+  display: none;
+  position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
+  bottom: 0;
+  background-color: var(--light-yellow);
+  padding: 5%;
+  /* box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1); */
+  transition:1s;
+  z-index: 3;
 }
-/* .mobile-menu.active {
-  top:0;
-  bottom:0;
-} */
+
 .mobile-menu a {
   text-decoration: none;
   font-size: 20px;
@@ -778,21 +782,6 @@ nav a:hover {
   top: 18%;
   transition: 1s all;
   z-index: 2;
-}
-
-.banner {
-  display: none; 
-  background-color: var(--light);
-  background-image: url('/images/picaron-studio40.jpg');
-  background-size: cover;
-  padding: 5%;
-  position: fixed; 
-  z-index:3;
-  top: 0;
-  bottom: 0;
-  right: 50%;
-  left: 0;
-  text-align: center;
 }
 
 .bottom {
