@@ -612,8 +612,8 @@ nav a:hover {
 }
 
 
-.circle-button {
-  color: var(--light-pink-text);
+.hamburger {
+  color: var(--dark-text);
   cursor: pointer;
   display: inline-block;
   font-weight: 200;
@@ -625,12 +625,12 @@ nav a:hover {
   z-index: 5;
 }
 
-.circle-button i:hover {
-  color: var(--pink-text);
+.hamburger i:hover {
+  color: var(--yellow);
 }
 
 /* Styles when the circle button is active  */
-.circle-button.active {
+.hamburger.active {
   color: var(--pink);
 }
 
@@ -765,6 +765,14 @@ nav a:hover {
   top: 76px;
 }
 
+.notification-bar {
+  width: 100%;
+  background-color: var(--red);
+  color: white;
+  padding: 0.5rem;
+  position: fixed;
+  z-index: 1;
+}
 
 /* Dropdown styles */
 
