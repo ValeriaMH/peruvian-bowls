@@ -1,13 +1,15 @@
-// A $( document ).ready() block.
+// Mobile menu
+
 $( document ).ready(function() {
-    
-    $(".circle-button").click(function(){
 
-        $(this).toggleClass('active');
-        $(".mobile-menu").fadeToggle();
-        $( ".banner" ).slideToggle("fast");
+  $('.hamburger').click(function(){
+  	$('.mobile-menu').fadeToggle(100);
+  	$(this).toggleClass('active');
+});
 
-    });
+});
+
+
 
 // Animate on scroll - activate
 AOS.init({
@@ -22,7 +24,6 @@ AOS.init({
 });
 
 
-});
 
 // Testimonial Slider
 
