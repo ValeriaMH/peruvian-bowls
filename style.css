@@ -589,9 +589,9 @@ p a:hover {
 
 
 /* ------------ Header & Hamburger Menu -------------- */
-header {
+/* header {
     padding: 1% 5%;
-}
+} */
 
 nav a {
     padding: 0.25rem 0.5rem;
@@ -602,14 +602,10 @@ nav a:hover {
   color: var(--pink-text);
 }
 
-.logo {
-  text-decoration: none;
-  font-size: 2.5rem;
+.logo img {
+  width: fit-content;
+  height: 50%;
 } 
-
-.logo a:hover {
-  text-decoration: none;
-}
 
 
 .hamburger {
@@ -770,8 +766,12 @@ nav a:hover {
   background-color: var(--red);
   color: white;
   padding: 0.5rem;
+}
+
+.fixed-menu {
   position: fixed;
   z-index: 1;
+  background-color: var(--beige);
 }
 
 /* Dropdown styles */
