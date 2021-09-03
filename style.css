@@ -822,8 +822,16 @@ nav a:hover {
 
 .our-story-text {
   font-family: 'charcuterie-deco', sans-serif;
-  font-size: 4rem;
-  
+  font-size: 3.5rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 28%;
+  right: 0;
+  opacity: 0.8;
+
 }
 
 /* Dropdown styles */
