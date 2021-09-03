@@ -627,9 +627,13 @@ nav a {
     padding: 0.25rem 0.5rem;
     display: inline-block;
     text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0 0.25rem;
+    font-weight: 500;
 }
 nav a:hover {
-  color: var(--pink-text);
+  color: var(--red-text);
 }
 
 .hamburger {
@@ -938,6 +942,7 @@ footer nav a {
   display:block;
   padding: 0.25rem;
   font-size: 0.9rem;
+  text-transform: none;
 }
 
 
@@ -986,8 +991,36 @@ form [class*=col-] {
   border-radius: 0;
   font-size: 1rem;
 }
-form .button {
+.contact form .button {
   width:100%;
+  background-color: var(--dark-text);
+  border: 1px solid var(--dark-text);
+  color: var(--beige-text);
+  margin-top: 0.65rem;
+}
+
+.contact form .button:hover {
+  background-color: var(--beige);
+  color: var(--dark-text);
+}
+
+.contact input {
+  border: 1px solid var(--dark-text);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border: 1px solid var(--red);
+  /* featured color */
+}
+
+.contact textarea {
+  width: 100%;
+  border: 1px solid var(--dark-text);
+  font-size: 0.9rem;
+  font-family: 'Brandon Grotesque', sans-serif;
+  padding: 0.8rem;
 }
 
 /* Social Share Nav  */
