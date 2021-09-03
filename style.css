@@ -1100,6 +1100,10 @@ opacity: 0.5
     font-size: 1.2rem;
   }
 
+  .bg-over {
+    left: 0;
+  }
+
 
   .horizontal-scroll {
     overflow-x: auto;
