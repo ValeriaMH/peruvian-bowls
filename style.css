@@ -820,6 +820,12 @@ nav a:hover {
  margin-top: 10%;
 }
 
+.our-story-text {
+  font-family: 'charcuterie-deco', sans-serif;
+  font-size: 4rem;
+  
+}
+
 /* Dropdown styles */
 
 .dropdown { 
