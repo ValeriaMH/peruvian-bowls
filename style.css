@@ -121,8 +121,8 @@ section { position: relative; }
 .bg-beige { 
   background-color: var(--beige);
 }
-.bg-pink { background-color: var(--pink);}
-.bg-orange   { background-color: var(--orange-light); }
+.bg-red { background-color: var(--red);}
+.bg-yellow  { background-color: var(--yellow); }
 .bg-light    { background-color: var(--light); }
 .bg-white    { background-color: var(--white); }
 
@@ -552,7 +552,9 @@ p a:hover {
   text-decoration: none;
 }
 
-.button { 
+.button,
+.button-inverted,
+.button-red { 
     display: inline-block;
     text-decoration: none;
     border: 1px solid var(--beige);
@@ -571,21 +573,28 @@ p a:hover {
   color: var(--beige-text);
 }
 
-.button-pink { 
-  display: inline-block;
-  text-decoration: none;
-  line-height: 1;
-  padding: 0.5rem 1.5rem;
-  border: 1.5px solid var(--pink);
-  background-color: var(--pink);
-  border-radius: 5px;
-  color: white;
-  transition: 0.3s;
+.button-inverted {
+  border: 1px solid var(--dark-text);
+  background-color: var(--dark-text);
+  color: var(--beige-text);
 }
 
-.button-pink:hover {
-  color: var(--pink-text);
-  background-color: white;
+.button-inverted:hover {
+  border: 1px solid var(--dark-text);
+  background-color: var(--beige-text);
+  color: var(--dark-text);
+}
+
+.button-red {
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  color: var(--beige-text);
+}
+
+.button-red:hover {
+  border: 1px solid var(--red);
+  background-color: var(--beige);
+  color: var(--red);
 }
 
 .subtle-button {
@@ -845,12 +854,14 @@ nav a:hover {
   padding: 0.25rem;
   margin: 0.25rem 0;
   display:block;
-  color: teal;
   position: relative;
   text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 .accordion dd {
   padding: 0.5rem;
+  background-color: var(--beige);
 }
 
 /* Icon */
@@ -871,6 +882,7 @@ nav a:hover {
 
 .accordion dt.open::after {
   transform:rotate(45deg);
+  color: var(--red);
 }
   
 
@@ -888,17 +900,18 @@ footer nav a {
 
 input {
   border-style: solid;
-  border: 2px solid rgb(200, 200, 205);
-  padding: 0.8em;
+  border: 1px solid var(--white);
+  padding: 0.8rem;
   display: block;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: 'Brandon Grotesque', sans-serif;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border: 2px solid #e67e22;
+  border: 1px solid var(--red);
   /* featured color */
 }
 
@@ -1075,6 +1088,19 @@ opacity: 0.5
     margin-top: 30%;
    }
 
+   .big-bold {
+    font-size: 2.5rem;
+  }
+
+  .medium-bold {
+    font-size: 2rem;
+  }
+
+  .text-15 {
+    font-size: 1.2rem;
+  }
+
+
   .horizontal-scroll {
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -1129,6 +1155,11 @@ opacity: 0.5
   .email-signup input {
     width: 100%;
     max-width: 100%;
+  }
+
+  .has-image .shopify-buy__layout-vertical .shopify-buy__product {
+    min-width: 25rem;
+  }
 
 
 
