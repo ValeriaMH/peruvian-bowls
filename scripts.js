@@ -91,6 +91,9 @@ $("#submit").click(function(){
 });
 
 
-
-//  SHOPIFY CODE
-
+// Pop up Gallery
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false
+  
+});

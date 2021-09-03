@@ -62,7 +62,10 @@ section { position: relative; }
 .padded-t  { padding-top: 5%; }
 .padded-t-lg  { padding-top: 10%; }
 .padded-b  { padding-bottom: 5%; }
+.padded-b-lg  { padding-bottom: 10%; }
 .padded-l  { padding-left: 5%; }
+.padded-l-lg  { padding-left: 10%; }
+.padded-l-xlg  { padding-left: 15%; }
 .padded-r  { padding-right: 5%; }
 
 .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
@@ -176,6 +179,10 @@ section { position: relative; }
 
 .fixed {
   background-attachment: fixed;
+}
+
+.gallery [class*="col-"] {
+  padding: 0.5%;
 }
 
 /* How it works hover */
@@ -394,6 +401,11 @@ p:last-child {
   font-size: 5rem;
   font-weight: 700;
   font-family: 'Courier Prime', monospace;
+}
+
+.big-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .text-orange  { color: var(--orange-text);}
@@ -831,7 +843,23 @@ nav a:hover {
   bottom: 28%;
   right: 0;
   opacity: 0.8;
+}
 
+.team-text {
+  font-family: 'charcuterie-deco', sans-serif;
+  font-size: 3.5rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 43%;
+  left: 0;
+  opacity: 0.8;
+}
+
+.profile-image {
+  border-radius: 100%;
 }
 
 /* Dropdown styles */
