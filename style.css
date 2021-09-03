@@ -693,14 +693,18 @@ nav a:hover {
 
 .mobile-menu a {
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: var(--dark-text);
   font-family: 'brandon grotesque', sans-serif;
   display:block;
   padding:5px 15px;
   text-align:center;
   white-space:nowrap;
+}
+
+.mobile-menu a:hover {
+  color: var(--red-text);
 }
 
 .social-menu {
@@ -716,7 +720,7 @@ nav a:hover {
 }
 
 .social-menu a:hover {
-  color: var(--pink-text);
+  color: var(--red-text);
 }
 
 .social-menu-mobile a {
@@ -1030,6 +1034,21 @@ opacity: 0.5
 	.show-md { display: block; }
 	.hide-md { display: none;  }
 
+  .horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5%;
+  }
+
+  .tall-40-md  { min-height: 40vh; }
+  .tall-50-md  { min-height: 50vh; }
+
+  .margin-fixed {
+    margin-top: 18%;
+   }
+
 
 }
 
@@ -1085,7 +1104,7 @@ opacity: 0.5
   }
   
   .margin-fixed {
-    margin-top: 30%;
+    margin-top: 20%;
    }
 
    .big-bold {
@@ -1193,5 +1212,9 @@ opacity: 0.5
       padding-right: 1rem;
       padding-bottom: 5%;
     }
+
+    .margin-fixed {
+      margin-top: 30%;
+     }
 
   }
