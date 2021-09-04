@@ -1265,6 +1265,10 @@ opacity: 0.5
     left: 0;
   }
 
+  .bg-mapi {
+    min-height: 30vh;
+  }
+
 
   .horizontal-scroll {
     overflow-x: auto;
