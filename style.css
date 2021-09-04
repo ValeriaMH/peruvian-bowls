@@ -1360,3 +1360,39 @@ opacity: 0.5
      }
 
   }
+
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+    @media {
+  
+        a:any-link {
+          text-decoration: none;
+        }
+  
+        .burger-top{
+          top: -04px;
+        }
+        
+        .burger-bottom{
+          bottom: -04px;
+        }
+  
+    }
+  }
+  
+  @media not all and (min-resolution:.001dpcm) { 
+      @media {
+  
+        a:any-link {
+          text-decoration: none;
+        }
+  
+        .burger-top{
+          top: -04px;
+        }
+        
+        .burger-bottom{
+          bottom: -04px;
+        }
+  
+  }
+  }
