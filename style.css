@@ -1268,6 +1268,8 @@ opacity: 0.5
   .bg-mapi {
     min-height: 30vh;
     background-size: contain;
+    background-attachment: unset;
+
   }
 
 
@@ -1374,7 +1376,7 @@ opacity: 0.5
         }
   
         .burger-top{
-          top: 8px;
+          top: -8px;
         }
         
         .burger-bottom{
@@ -1392,7 +1394,7 @@ opacity: 0.5
         }
   
         .burger-top{
-          top: 8px;
+          top: -8px;
         }
         
         .burger-bottom{
