@@ -162,8 +162,64 @@ section { position: relative; }
     background-repeat: no-repeat;
 }
 
-.bg-banner1 {
-  background-image: url('/_images/demo-web17.jpg');
+.bg-banner {
+  background-image: url('/images/demo-web17.jpg');
+  background-position: 70% 20%;
+}
+
+.bg-mapi {
+  background-image: url('/images/demo-web12.jpg');
+}
+
+.bg-weekly {
+  background-image: url('/images/demo-web8.jpg');
+  background-position: 70% 65%;
+}
+
+.bg-meal{
+  background-image: url('/images/demo-web6.jpg');
+}
+
+.bg-chef{
+  background-image: url('/images/demo-web10.jpg');
+}
+
+.bg-delivery{
+  background-image: url('/images/demo-web1.jpg');
+}
+
+.bg-delivery2{
+  background-image: url('/images/demo-web7.jpg');
+  background-position: 70% 100%;
+}
+
+.bg-delivery3{
+  background-image: url('/images/demo-web15.jpg');
+}
+
+.bg-menu{
+  background-image: url('/images/demo-web10.jpg');
+  background-position: 70% 90%;
+}
+
+.bg-corn{
+  background-image: url('/images/demo-web3.jpg');
+}
+
+.bg-corn2{
+  background-image: url('/images/demo-web2.jpg');
+}
+
+.bg-pepper{
+  background-image: url('/images/demo-web5.jpg');
+}
+
+.bg-coriander{
+  background-image: url('/images/demo-web4.jpg');
+}
+
+.bg-contact{
+  background-image: url('/images/demo-web6.jpg');
 }
 
 .logo img {
@@ -837,7 +893,7 @@ nav a:hover {
 }
 
 .margin-fixed {
- margin-top: 10%;
+ margin-top: 9%;
 }
 
 .our-story-text {
@@ -1131,7 +1187,7 @@ opacity: 0.5
   .tall-50-md  { min-height: 50vh; }
 
   .margin-fixed {
-    margin-top: 18%;
+    margin-top: 17%;
    }
 
 
@@ -1190,7 +1246,7 @@ opacity: 0.5
   }
   
   .margin-fixed {
-    margin-top: 20%;
+    margin-top: 19%;
    }
 
    .big-bold {
@@ -1300,7 +1356,7 @@ opacity: 0.5
     }
 
     .margin-fixed {
-      margin-top: 30%;
+      margin-top: 29%;
      }
 
   }

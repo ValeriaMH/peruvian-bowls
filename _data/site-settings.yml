@@ -1,6 +1,6 @@
 general:
-  logo_image: https://source.unsplash.com/8Ogfqvw15Rg/1600x1600
-  menu_image: https://source.unsplash.com/8Ogfqvw15Rg/1600x1600
+  logo_image: /images/demo-web24.png
+  menu_image: /images/demo-web24.png
 seo:
   site_name: Peruvian Bowls | Ready Meals in Brisbane
   title: Peruvian Bowls | Ready Meals in Brisbane
@@ -13,7 +13,7 @@ seo:
   favicon_image:
 social:
   instagram_url: https://www.instagram.com/peruvianbowls
-  facebook_url: https://www.facebook.com/peruvianbowls
+  facebook_url: https://www.facebook.com/PeruvianBowls-102816078802645
   youtube_url:
   pinterest_url:
   twitter_url:
