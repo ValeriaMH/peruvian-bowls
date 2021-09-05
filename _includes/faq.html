@@ -1,0 +1,25 @@
+
+
+<section class="grid padded padded-tb-lg">
+
+    <div class="col-8_md-7_sm-12-left padded">
+        <h3 class="medium-bold editable">
+            FAQ
+        </h3>
+        <dl class="accordion">
+  
+          {% for item in page.faq %}
+  
+          <dt> {{item.question }}</dt>
+          <dd>{{%item.answer %}}</dd>
+        
+          {% endfor %}
+        
+        </dl>
+      </div>
+      <div class="col-4_md-5 hide-sm">
+        <div class="bg-image tall-60 tall-40-md" style="background-image:url('{{ page.banner-faq_image }}')"></div>
+      </div>
+    
+    
+  </section>

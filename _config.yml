@@ -47,11 +47,12 @@ _select_data:
   image-positions:
     - bg-pos-t
     - bg-pos-b
-  background_color:
+  background-colors:
     - bg-red
     - bg-yellow
-    - bg-light
     - bg-beige
+    - bg-light
+    - bg-blue
 
   column-sizes:
     col-6: One Half
@@ -76,10 +77,11 @@ _select_data:
     bg-pos-t: Top
     bg-pos-b: Bottom
   
-  background_color:
-    bg-red: Rojo
-    bg-yellow: Amarillo
-    bg-light: Light
+  background-colors:
+    bg-red: Red
+    bg-yellow: Yellow
     bg-beige: Beige
+    bg-light: Light
+    bg-blue: Blue
   
     
