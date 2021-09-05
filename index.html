@@ -6,14 +6,18 @@ seo:
   social_image:
   keywords:
   hide-from-google: true
-banner:
-  - banner_image: /images/demo-web17.jpg
-    image-position: bg-pos-t
-    banner-tall: tall-100
+banner_image: /images/demo-web17.jpg
+image-position: bg-pos-t
+banner-tall: tall-100
 how-it-works:
-  - step-1_image: /images/demo-web14.jpg
-    step-2_image: /images/demo-web16.jpg
-    step-3_image: /images/demo-web13.jpg
+  - background_image: /images/demo-web14.jpg
+    hover-title: One
+    title: Choose between a weekly meal or just one meal.
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.
+  - background_image: /images/demo-web16.jpg
+    hover-title: Two
+  - background_image: /images/demo-web13.jpg
+    hover-title: Three
 ---
 
 
@@ -23,15 +27,15 @@ how-it-works:
 {% include header-nav.html %}
 
 <!-- Banner section -->
-<section class="bg-image {{item.banner_image}} {{item.image-position }} grid-left padded {{item.banner-tall }} margin-fixed tall-60-sm" style="background-image:url('{{ page.banner_image }}')">
+<section class="bg-image {{page.image-position }} grid-left padded {{page.banner-tall }} margin-fixed tall-60-sm" style="background-image:url('{{ page.banner_image }}')">
     <div class="col-7_sm-12-middle">
       <h3>
-        <span class="big-bold text-light"> AMAZING PERUVIAN MEALS </span> <br>
-        <span class="medium-bold text-light"> for amazing busy people </span> <br>
+        <span class="big-bold text-light editable"> AMAZING PERUVIAN MEALS </span> <br>
+        <span class="medium-bold text-light editable"> for amazing busy people </span> <br>
       </h3>
       <h1 class="padded-b-1"> 
-        <span class="highlight text-15">Ready Meals delivered right at your door.</span></h1>
-      <a href="/#order" class="button"> Order now </a>
+        <span class="highlight text-15 editable">Ready Meals delivered right at your door.</span></h1>
+      <a href="/#order" class="button editable"> Order now </a>
     </div>
 </section>
 
@@ -40,48 +44,28 @@ how-it-works:
 
 <section class="padded center padded-t-lg" id="how">
     <h2 class="uppercase"> How it works </h2>
+
     <div class="grid padded-1">
+
+      {% for item in page.how-it-works %}
         <div class="col-4_sm-12 padded-1">
-            <div class="hover-container" style="background-image:url('{{ page.step-1_image }}')">
+            <div class="hover-container" style="background-image:url('{{ item.background_image }}')">
             <div class="hover-overlay">
                 <div class="hover-inner">
-                    <h3> Choose your meals </h3>
+                    <h3> {{item.hover-title }} </h3>
                 </div>
             </div>
             </div>
             <div class="padded">
-                <h4>1. Choose between a weekly meal or just one meal. </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.</p>
+                <h4>{{item.title }} </h4>
+                <p>{{item.description }}</p>
             </div>
         </div>
-        <div class="col-4_sm-12 padded-1">
-            <div class="hover-container" style="background-image:url('{{ page.step-2_image }}')">
-            <div class="hover-overlay">
-                <div class="hover-inner">
-                    <h3> We deliver them to your door </h3>
-                </div>
-            </div>
-            </div>
-            <div class="padded">
-                <h4>2. Choose between a weekly meal or just one meal. </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.</p>
-            </div>
-        </div>
-        <div class="col-4_sm-12 padded-1">
-          <div class="hover-container" style="background-image:url('{{ page.step-3_image }}')">
-            <div class="hover-overlay">
-              <div class="hover-inner">
-                    <h3> Heat & get obsessed with Peruvian Food </h3>
-              </div>
-            </div>
-          </div>
-          <div class="padded">
-            <h4>3. Choose between a weekly meal or just one meal. </h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.</p>
-            </div>
-        </div>
+
+        {% endfor %}
+        
         <div class="col-12 center">
-          <a href="/#order" class="button-inverted"> Order now </a>
+          <a href="/#order" class="button-inverted editable"> Order now </a>
         </div>
         
     </div>
