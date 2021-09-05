@@ -2,3 +2,5 @@ special-offer:
   background_color: bg-red
 sign-up:
   background_color: bg-yellow
+delivery:
+  background_color: bg-light

@@ -6,6 +6,12 @@ seo:
   social_image:
   keywords:
   hide-from-google: true
+banner:
+  banner_image: /images/demo-web6.jpg
+  banner-tall: tall-60
+  small-devices-tall: tall-40-sm
+  banner-position: bg-pos-t
+  text_color: text-light
 ---
 
 <!-- Header & Menu -->
@@ -13,11 +19,11 @@ seo:
 {% include header-nav.html %}
 
 <!-- Banner section -->
-<section class="bg-image bg-contact grid-right padded tall-60 tall-40-sm margin-fixed">
+<section class="bg-image grid-right padded {{page.banner.banner-tall }} {{page.banner.small-devices-tall }} {{page.banner.banner-position }} margin-fixed" style="background-image:url('{{ page.banner.banner_image }}')">
     <div class="col-6_sm-12-middle">
       <h3>
-        <span class="big-bold uppercase text-light"> Hola </span> <br>
-        <span class="medium-bold text-light"> Get in touch </span> <br>
+        <span class="big-bold uppercase {{page.banner.text_color }} editable"> Hola </span> <br>
+        <span class="medium-bold {{page.banner.text_color }} editable"> Get in touch </span> <br>
       </h3>
     </div>
 </section>
@@ -25,11 +31,11 @@ seo:
 <!-- Contact Form -->
 <section class="grid padded contact">
     <div class="col-6_sm-12 padded">
-      <h2> Contact us </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p> <strong> Email: </strong> hello@company.com </p>
-      <p> <strong> Phone: </strong> 0412 555 555 </p>
-      <p> <strong> Location: </strong> Brisbane & Gold Coast </p>
+      <h2 class="editable"> Contact us </h2>
+      <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="editable"> <strong> Email: </strong> hello@company.com </p>
+      <p class="editable"> <strong> Phone: </strong> 0412 555 555 </p>
+      <p class="editable"> <strong> Location: </strong> Brisbane & Gold Coast </p>
     </div>
     <div class="col-6_sm-12-middle padded">
       <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
