@@ -14,7 +14,9 @@ how-it-works:
   - background_image: /images/demo-web14.jpg
     hover-title: One
     title: Choose between a weekly meal or just one meal.
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime,
+      distinctio illum dolore architecto.
   - background_image: /images/demo-web16.jpg
     hover-title: Two
     title: Choose between a weekly meal or just one meal.
@@ -28,8 +30,6 @@ banner-2-tall: tall-70
 small-devices-2-tall: tall-50-md
 ---
 
-
-
 <!-- Header & Menu -->
 
 {% include header-nav.html %}
@@ -38,8 +38,8 @@ small-devices-2-tall: tall-50-md
 <section class="bg-image {{page.image-position }} grid-left padded {{page.banner-tall }} margin-fixed {{page.small-devices-tall }}" style="background-image:url('{{ page.banner_image }}')">
     <div class="col-7_sm-12-middle">
       <h3>
-        <span class="big-bold text-light editable"> AMAZING PERUVIAN MEALS </span> <br>
-        <span class="medium-bold text-light editable"> for amazing busy people </span> <br>
+        <span class="big-bold text-light editable"> AMAZING PERUVIAN MEALS </span> <br />
+        <span class="medium-bold text-light editable"> for amazing busy people </span> <br />
       </h3>
       <h1 class="padded-b-1"> 
         <span class="highlight text-15 editable">Ready Meals delivered right at your door.</span></h1>
@@ -455,7 +455,7 @@ small-devices-2-tall: tall-50-md
     <div class="col-4_md-5 hide-sm">
       <div class="bg-image bg-delivery tall-60 tall-40-md"></div>
     </div>
-  </div>
+  
   
 </section>
 
@@ -467,9 +467,9 @@ small-devices-2-tall: tall-50-md
   <p> This one could be connected to your email newsletter, like mailchimp or mailerlite or just a standard email form. </p>
 
   <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name">
-    <input type="email" name="_replyto" placeholder="Your Email">
-    <input type="submit" value="Send" class="button-red">
+    <input type="text" name="name" placeholder="Your Name" />
+    <input type="email" name="_replyto" placeholder="Your Email" />
+    <input type="submit" value="Send" class="button-red" />
   </form>
 
 </section>
