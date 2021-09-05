@@ -162,9 +162,9 @@ section { position: relative; }
     background-repeat: no-repeat;
 }
 
-.bg-banner {
+/* .bg-banner {
   background-position: 70% 20%;
-}
+} */
 
 .bg-mapi {
   background-image: url('/images/demo-web12.jpg');
