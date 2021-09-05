@@ -28,6 +28,13 @@ how-it-works:
 banner-2_image: /images/demo-web12.jpg
 banner-2-tall: tall-70
 small-devices-2-tall: tall-50-md
+meal-plans:
+  - background_image: /images/demo-web8.jpg
+    title: Weekly Plan
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti aspernatur quod minima ullam ab, in nihil temporibus velit, quae iure omnis dignissimos fuga, laudantium a quo alias qui ipsam!
+  - background_image: /images/demo-web6.jpg
+    title: 1 to 4 Meals
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti aspernatur quod minima ullam ab, in nihil temporibus velit, quae iure omnis dignissimos fuga, laudantium a quo alias qui ipsam!
 ---
 
 <!-- Header & Menu -->
@@ -85,7 +92,7 @@ small-devices-2-tall: tall-50-md
 <section class="bg-image grid-center fixed {{page.banner-2-tall }} {{page.small-devices-2-tall }}" style="background-image:url('{{ page.banner-2_image }}')">
     <div class="col-6_sm-12-middle center">
       <h2 class="big-bold text-light editable"> PERUVIAN FOOD </h2>
-      <h3 class="text-lightn editable"> Find out why is one of the best in the world </h3>
+      <h3 class="text-light editable"> Find out why is one of the best in the world </h3>
       <a href="/about/#peru" class="button editable">I want to know more</a>
     </div>
   </section>  
@@ -94,29 +101,25 @@ small-devices-2-tall: tall-50-md
 <!--------------------  MEAL PLANS -------------------->
 
   <section class="padded-tb-lg" id="meals">
+
+    {% for item in page.meal-plans %}
     <div class="grid flex-flip">
-      <div class="col-6_sm-12 bg-image bg-weekly"></div>
+      <div class="col-6_sm-12 bg-image" style="background-image:url('{{ item.background_image }}')"></div>
       <div class="col-6_sm-12-middle padded">
-        <h3> Weekly Plan </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <a class="button-inverted" href="/#order"> Order now </a>
+        <h3> {{item.title }} </h3>
+        <p> {{item.description }} </p>
+        <a class="button-inverted editable" href="/#order"> Order now </a>
       </div>
     </div>
-    <div class="grid flex-flip">
-      <div class="col-6_sm-12 bg-image bg-meal"></div>
-      <div class="col-6_sm-12-middle padded">
-        <h3> 1 to 4 meals </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <a class="button-inverted" href="/#order"> Order now </a>
-      </div>
-    </div>
+    {% endfor %}
+    
   </section>
 
 <!--------------------  BANNER DISCOUNT -------------------->
 
 <section class="center padded bg-red">
-  <h3 class="medium-bold uppercase text-light" id="order"> Order Here </h3>
-  <p class="text-15 text-light"> You'll get a $10 discount after choosing 5 meals. </p>
+  <h3 class="medium-bold uppercase text-light editable" id="order"> Order Here </h3>
+  <p class="text-15 text-light editable"> You'll get a $10 discount after choosing 5 meals. </p>
 
 </section>
 
