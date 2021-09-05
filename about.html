@@ -20,6 +20,33 @@ team:
   bio: The King
   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione eum perferendis minus velit magni rem iure corrupti dolor minima voluptas, hic consequatur quia itaque.
   profile_image: /images/demo-web18.jpg
+banner2:
+- banner_image: /images/demo-web12.jpg
+  banner-tall: tall-70
+  small-devices-tall: tall-50-md
+highlights:
+- icon: fas fa-pepper-hot
+  title: World's Best Pantry
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quod et id voluptatem aliquid dignissimos, vitae p
+- icon: fas fa-star
+  title: World's best culinary destination
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quod et id voluptatem aliquid dignissimos, vitae p
+- icon: fas fa-star
+  title: World's Best Pantry
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quod et id voluptatem aliquid dignissimos, vitae p
+gallery:
+- background_image: /images/demo-web3.jpg
+  link-popup: /images/demo-web3.jpg
+  text-hover: Purple Corn
+- background_image: /images/demo-web5.jpg
+  link-popup: /images/demo-web5.jpg
+  text-hover: Purple Corn
+- background_image: /images/demo-web4.jpg
+  link-popup: /images/demo-web4.jpg
+  text-hover: Purple Corn
+- background_image: /images/demo-web2.jpg
+  link-popup: /images/demo-web2.jpg
+  text-hover: Purple Corn
 ---
 
 <!-- Header & Menu -->
@@ -35,14 +62,14 @@ team:
     
     </div>
     <div class="col-6_sm-12-middle padded">
-      <h2 class="big-bold"> About us </h2>
+      <h2 class="big-bold editable"> About us </h2>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum ex porro qui, explicabo voluptatibus optio quibusdam quis quod, mollitia nulla vel ullam officia architecto, incidunt dignissimos repellat iste rerum. </p>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum ex porro qui, explicabo voluptatibus optio quibusdam quis quod, mollitia nulla vel ullam officia architecto, incidunt dignissimos repellat iste rerum. </p>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum ex porro qui, explicabo voluptatibus optio quibusdam quis quod, mollitia nulla vel ullam officia architecto, incidunt dignissimos repellat iste rerum. </p>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum ex porro qui, explicabo voluptatibus optio quibusdam quis quod, mollitia nulla vel ullam officia architecto, incidunt dignissimos repellat iste rerum. </p>
     </div>
     <div>
-        <h3 class="our-story-text"> Our story </h3>
+        <h3 class="our-story-text editable"> Our story </h3>
     </div>
   </section>
 
@@ -53,7 +80,7 @@ team:
     <div class="capped-width-narrow">
     
     <div>
-        <h3 class="team-text"> The Team </h3>
+        <h3 class="team-text editable"> The Team </h3>
     </div>
         
     {% for person in page.team %}
@@ -79,33 +106,35 @@ team:
 
 <!--------------------  PERUVIAN FOOD BANNER -------------------->
 
-<section class="bg-image bg-mapi grid-center fixed tall-60 tall-40-md" id="peru">
+{% for item in page.banner2 limit: 1 %}
+
+<section class="bg-image grid-center fixed {{item.banner-tall }} {{item.small-devices-tall }}" style="background-image:url('{{ item.banner_image }}')" id="peru">
     <div class="col-6_sm-12-middle center">
-      <h2 class="big-bold text-light"> PERUVIAN FOOD </h2>
-      <h3 class="text-light"> Find out why is one of the best in the world </h3>
+      <h2 class="big-bold text-light editable">
+          PERUVIAN F<em></em><strong></strong>OOD
+      </h2>
+      <h3 class="text-light editable">
+          Find out why is one of the best in the world
+      </h3>
     </div>
-  </section>  
+  </section> 
+
+  {% endfor %}
 
 <!-- ICONS PERUVIAN FOOD  -->
 
-  <section class="padded center">
-    <h2 class="uppercase"> Peruvian Food Highlights </h2>
+  <section class="padded padded-t-lg center">
+    <h2 class="uppercase editable"> Peruvian Food Highlights </h2>
     <div class="grid padded-1">
-      <div class="col-4_sm-12 padded-1">
-        <i class="fas fa-pepper-hot big-icon"></i>
-        <h4> World's Best Pantry </h4>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+      {% for item in page.highlights %}
+      <div class="col-4_sm-12 padded-sm">
+        <i class="{{item.icon }} big-icon"></i>
+        <h4> {{item.title }} </h4>
+        <p>{{item.description}}</p>
       </div>
-      <div class="col-4_sm-12 padded-1">
-        <i class="far fa-star big-icon"></i>
-        <h4> World's best culinary destination </h4>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-4_sm-12 padded-1">
-        <i class="far fa-star big-icon"></i>
-        <h4> Short Heading </h4>
-        <p>Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
+      {% endfor %}
+  
     </div>
   </section>
 
@@ -113,50 +142,22 @@ team:
 
   <section class="padded center">
 
-    <h2 class="uppercase"> Peruvian Food Gallery </h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <h2 class="uppercase editable"> Peruvian Food Gallery </h2>
+    <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     
       <div class="gallery grid-center padded-1" id="lightgallery">
-    
-        <a class="col-3_sm-6_xs-12" href="https://source.unsplash.com/8Ogfqvw15Rg/1600x1600">
-            <div class="hover-container" style="background-image:url('/images/demo-web3.jpg')">
-                <div class="hover-overlay">
-                    <div class="hover-inner">
-                        <h4> Purple Corn </h4>
-                    </div>
-                </div>
-            </div>
-        </a>
 
-        <a class="col-3_sm-6_xs-12" href="https://source.unsplash.com/8Ogfqvw15Rg/1600x1600">
-            <div class="hover-container" style="background-image:url('/images/demo-web5.jpg')">
+        {% for item in page.gallery %}
+        <a class="col-3_sm-6_xs-12" href="{{item.link-popup }}">
+            <div class="hover-container" style="background-image:url('{{item.background_image }}')">
                 <div class="hover-overlay">
                     <div class="hover-inner">
-                        <h4> Purple Corn </h4>
+                        <h4> {{item.text-hover}} </h4>
                     </div>
                 </div>
             </div>
         </a>
-
-        <a class="col-3_sm-6_xs-12" href="https://source.unsplash.com/8Ogfqvw15Rg/1600x1600">
-            <div class="hover-container" style="background-image:url('/images/demo-web4.jpg')">
-                <div class="hover-overlay">
-                    <div class="hover-inner">
-                        <h4> Purple Corn </h4>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a class="col-3_sm-6_xs-12" href="https://source.unsplash.com/8Ogfqvw15Rg/1600x1600">
-            <div class="hover-container" style="background-image:url('/images/demo-web2.jpg')">
-                <div class="hover-overlay">
-                    <div class="hover-inner">
-                        <h4> Purple Corn </h4>
-                    </div>
-                </div>
-            </div>
-        </a>
+        {% endfor %}
     
     
       </div>
