@@ -44,4 +44,13 @@ column-sizes:
   col-6_sm-12: One Half Desktop (Stacked)
   col-4_sm-12: One Third Desktop (Stacked)
   col-3_sm-12: One Quarter Desktop (Stacked)
+
+banner-tall:
+  tall-100: 100% window
+  tall-90: 90% window
+  md-tall-80: 80% window Tablet
+
+image-position:
+  bg-pos-t: Top
+  bg-pos-b: Bottom
     
