@@ -35,29 +35,33 @@ _select_data:
     - portrait-tall
     - landscape
     - landscape-wide
-  banner-tall:
+  banner-talls:
     - tall-100
     - tall-90
+    - tall-80
     - md-tall-80
-  image-position:
+    - tall-60-sm
+  image-positions:
     - bg-pos-t
     - bg-pos-b
 
-column-sizes:
-  col-6: One Half
-  col-12: Full Width
-  col-4: One Third
-  col-3: One Quarter
-  col-6_sm-12: One Half Desktop (Stacked)
-  col-4_sm-12: One Third Desktop (Stacked)
-  col-3_sm-12: One Quarter Desktop (Stacked)
+  column-sizes:
+    col-6: One Half
+    col-12: Full Width
+    col-4: One Third
+    col-3: One Quarter
+    col-6_sm-12: One Half Desktop (Stacked)
+    col-4_sm-12: One Third Desktop (Stacked)
+    col-3_sm-12: One Quarter Desktop (Stacked)
 
-banner-tall:
-  tall-100: 100% window
-  tall-90: 90% window
-  md-tall-80: 80% window Tablet
+  banner-talls:
+    tall-100: 100% window
+    tall-90: 90% window
+    tall-80: 80% window
+    md-tall-80: 80% window Tablet
+    tall-60-sm: 60% window Mobile
 
-image-position:
-  bg-pos-t: Top
-  bg-pos-b: Bottom
+  image-positions:
+    bg-pos-t: Top
+    bg-pos-b: Bottom
     
