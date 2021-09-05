@@ -47,6 +47,9 @@ _select_data:
   image-positions:
     - bg-pos-t
     - bg-pos-b
+  background_colors:
+    - bg-red
+    - bg-yellow
 
   column-sizes:
     col-6: One Half

@@ -1,14 +1,4 @@
-_select_data:
-  background_colors:
-    - bg-red
-    - bg-yellow
-    - bg-beige
-    - bg-light
-    - bg-blue
-
-  background_colors:
-    bg-red: Red
-    bg-yellow: Yellow
-    bg-beige: Beige
-    bg-light: Light
-    bg-blue: Blue
+special-offer:
+  background_color: bg-red
+sign-up:
+  background_color: bg-yellow
