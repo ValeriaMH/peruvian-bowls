@@ -6,10 +6,11 @@ seo:
   social_image:
   keywords:
   hide-from-google: true
-banner_image: /images/demo-web17.jpg
-image-position: bg-pos-t
-banner-tall: tall-100
-small-devices-tall: tall-60-sm
+banner:
+  - banner_image: /images/demo-web17.jpg
+    image-position: bg-pos-t
+    banner-tall: tall-100
+    small-devices-tall: tall-60-sm
 how-it-works:
   - background_image: /images/demo-web14.jpg
     hover-title: One
@@ -25,9 +26,10 @@ how-it-works:
     hover-title: Three
     title: Choose between a weekly meal or just one meal.
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.
-banner-2_image: /images/demo-web12.jpg
-banner-2-tall: tall-70
-small-devices-2-tall: tall-50-md
+banner2:
+  - banner_image: /images/demo-web12.jpg
+    banner-tall: tall-70
+    small-devices-tall: tall-50-md
 meal-plans:
   - background_image: /images/demo-web8.jpg
     title: Weekly Plan
@@ -35,6 +37,10 @@ meal-plans:
   - background_image: /images/demo-web6.jpg
     title: 1 to 4 Meals
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti aspernatur quod minima ullam ab, in nihil temporibus velit, quae iure omnis dignissimos fuga, laudantium a quo alias qui ipsam!
+special-offer_color: bg-red
+banner-why_image: /images/demo-web10.jpg
+banner-faq_image: /images/demo-web1.jpg
+sign-up_color: bg-yellow
 ---
 
 <!-- Header & Menu -->
@@ -42,7 +48,10 @@ meal-plans:
 {% include header-nav.html %}
 
 <!-- Banner section -->
-<section class="bg-image {{page.image-position }} grid-left padded {{page.banner-tall }} margin-fixed {{page.small-devices-tall }}" style="background-image:url('{{ page.banner_image }}')">
+
+{% for item in page.banner limit: 1 %}
+
+<section class="bg-image {{item.image-position }} grid-left padded {{item.banner-tall }} margin-fixed {{item.small-devices-tall }}" style="background-image:url('{{ item.banner_image }}')">
     <div class="col-7_sm-12-middle">
       <h3>
         <span class="big-bold text-light editable"> AMAZING PERUVIAN MEALS </span> <br />
@@ -53,6 +62,8 @@ meal-plans:
       <a href="/#order" class="button editable"> Order now </a>
     </div>
 </section>
+
+{% endfor %}
 
 
 <!-- How it Works Section  -->
@@ -89,13 +100,17 @@ meal-plans:
 
 <!--------------------  PERUVIAN FOOD BANNER -------------------->
 
-<section class="bg-image grid-center fixed {{page.banner-2-tall }} {{page.small-devices-2-tall }}" style="background-image:url('{{ page.banner-2_image }}')">
+{% for item in page.banner2 limit: 1%}
+
+<section class="bg-image grid-center fixed {{item.banner-tall }} {{item.small-devices-tall }}" style="background-image:url('{{ item.banner_image }}')">
     <div class="col-6_sm-12-middle center">
       <h2 class="big-bold text-light editable"> PERUVIAN FOOD </h2>
       <h3 class="text-light editable"> Find out why is one of the best in the world </h3>
       <a href="/about/#peru" class="button editable">I want to know more</a>
     </div>
-  </section>  
+  </section> 
+
+  {% endfor %}
   
 
 <!--------------------  MEAL PLANS -------------------->
@@ -117,7 +132,7 @@ meal-plans:
 
 <!--------------------  BANNER DISCOUNT -------------------->
 
-<section class="center padded bg-red">
+<section class="center padded {{page.special-offer_color }}">
   <h3 class="medium-bold uppercase text-light editable" id="order"> Order Here </h3>
   <p class="text-15 text-light editable"> You'll get a $10 discount after choosing 5 meals. </p>
 
@@ -412,16 +427,16 @@ meal-plans:
 <!--------------------  WHY PERUVIAN BOWLS -------------------->
 
 <section class="grid padded padded-l-0 padded-tb sm-padded">
-  <div class="bg-image bg-chef col-7_sm-12 tall-70 tall-50-sm">
+  <div class="bg-image col-7_sm-12 tall-70 tall-50-sm" style="background-image:url('{{ page.banner-why_image }}')">
   </div>
   <div class="col-5_sm-12-middle relative">
     <div class="bg-beige-over bg-over">
-        <h2 class="big-bold"> Why Peruvian Bowls? </h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <a class="button-inverted" href="/about.html"> Get to know us more </a>
+        <h2 class="big-bold editable"> Why Peruvian Bowls? </h2>
+        <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="editable"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a class="button-inverted editable" href="/about.html"> Get to know us more </a>
       </div>
     </div>
 </section>
@@ -435,28 +450,28 @@ meal-plans:
 <section class="grid padded padded-tb-lg">
 
   <div class="col-8_md-7_sm-12-left padded">
-      <h3 class="medium-bold">FAQ</h3>
+      <h3 class="medium-bold editable">FAQ</h3>
       <dl class="accordion">
 
-        <dt> When is the last day to order?</dt>
-        <dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+        <dt class="editable"> When is the last day to order?</dt>
+        <dd class="editable">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
       
-        <dt>How does the delivery costs?</dt>
+        <dt class="editable">How does the delivery costs?</dt>
         <dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
       
-        <dt>How long do the meals last?</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+        <dt class="editable">How long do the meals last?</dt>
+        <dd class="editable">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
 
-        <dt>How long do the meals last?</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+        <dt class="editable">How long do the meals last?</dt>
+        <dd class="editable">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
 
-        <dt>How long do the meals last?</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+        <dt class="editable">How long do the meals last?</dt>
+        <dd class="editable">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
       
       </dl>
     </div>
     <div class="col-4_md-5 hide-sm">
-      <div class="bg-image bg-delivery tall-60 tall-40-md"></div>
+      <div class="bg-image tall-60 tall-40-md" style="background-image:url('{{ page.banner-faq_image }}')"></div>
     </div>
   
   
@@ -465,14 +480,14 @@ meal-plans:
 
 <!--------------------  SUSCRIBE -------------------->
 
-<section class="center padded bg-yellow">
-  <h3 class="uppercase"> Subscribe Now </h3>
-  <p> This one could be connected to your email newsletter, like mailchimp or mailerlite or just a standard email form. </p>
+<section class="center padded {{page.sign-up_color }}">
+  <h3 class="uppercase editable"> Subscribe Now </h3>
+  <p class="editable"> This one could be connected to your email newsletter, like mailchimp or mailerlite or just a standard email form. </p>
 
   <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
     <input type="text" name="name" placeholder="Your Name" />
     <input type="email" name="_replyto" placeholder="Your Email" />
-    <input type="submit" value="Send" class="button-red" />
+    <input type="submit" value="Send" class="button-red editable" />
   </form>
 
 </section>
