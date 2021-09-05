@@ -39,8 +39,11 @@ _select_data:
     - tall-100
     - tall-90
     - tall-80
+    - tall-70
+  small-devices-talls:
     - md-tall-80
     - tall-60-sm
+    - tall-50-md
   image-positions:
     - bg-pos-t
     - bg-pos-b
@@ -58,8 +61,11 @@ _select_data:
     tall-100: 100% window
     tall-90: 90% window
     tall-80: 80% window
+
+  small-devices-talls:
     md-tall-80: 80% window Tablet
     tall-60-sm: 60% window Mobile
+    tall-50-sm: 50% window Tablet
 
   image-positions:
     bg-pos-t: Top

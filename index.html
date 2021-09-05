@@ -9,6 +9,7 @@ seo:
 banner_image: /images/demo-web17.jpg
 image-position: bg-pos-t
 banner-tall: tall-100
+small-devices-tall: tall-60-sm
 how-it-works:
   - background_image: /images/demo-web14.jpg
     hover-title: One
@@ -16,8 +17,15 @@ how-it-works:
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.
   - background_image: /images/demo-web16.jpg
     hover-title: Two
+    title: Choose between a weekly meal or just one meal.
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.
   - background_image: /images/demo-web13.jpg
     hover-title: Three
+    title: Choose between a weekly meal or just one meal.
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maxime, distinctio illum dolore architecto.
+banner-2_image: /images/demo-web12.jpg
+banner-2-tall: tall-70
+small-devices-2-tall: tall-50-md
 ---
 
 
@@ -27,7 +35,7 @@ how-it-works:
 {% include header-nav.html %}
 
 <!-- Banner section -->
-<section class="bg-image {{page.image-position }} grid-left padded {{page.banner-tall }} margin-fixed tall-60-sm" style="background-image:url('{{ page.banner_image }}')">
+<section class="bg-image {{page.image-position }} grid-left padded {{page.banner-tall }} margin-fixed {{page.small-devices-tall }}" style="background-image:url('{{ page.banner_image }}')">
     <div class="col-7_sm-12-middle">
       <h3>
         <span class="big-bold text-light editable"> AMAZING PERUVIAN MEALS </span> <br>
@@ -43,7 +51,7 @@ how-it-works:
 <!-- How it Works Section  -->
 
 <section class="padded center padded-t-lg" id="how">
-    <h2 class="uppercase"> How it works </h2>
+    <h2 class="uppercase editable"> How it works </h2>
 
     <div class="grid padded-1">
 
@@ -74,11 +82,11 @@ how-it-works:
 
 <!--------------------  PERUVIAN FOOD BANNER -------------------->
 
-<section class="bg-image bg-mapi grid-center fixed tall-70 tall-50-md">
+<section class="bg-image grid-center fixed {{page.banner-2-tall }} {{page.small-devices-2-tall }}" style="background-image:url('{{ page.banner-2_image }}')">
     <div class="col-6_sm-12-middle center">
-      <h2 class="big-bold text-light"> PERUVIAN FOOD </h2>
-      <h3 class="text-light"> Find out why is one of the best in the world </h3>
-      <a href="/about/#peru" class="button">I want to know more</a>
+      <h2 class="big-bold text-light editable"> PERUVIAN FOOD </h2>
+      <h3 class="text-lightn editable"> Find out why is one of the best in the world </h3>
+      <a href="/about/#peru" class="button editable">I want to know more</a>
     </div>
   </section>  
   
