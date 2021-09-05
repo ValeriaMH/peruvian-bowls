@@ -35,6 +35,13 @@ _select_data:
     - portrait-tall
     - landscape
     - landscape-wide
+  banner-tall:
+    - tall-100
+    - tall-90
+    - md-tall-80
+  image-position:
+    - bg-pos-t
+    - bg-pos-b
 
 column-sizes:
   col-6: One Half
