@@ -47,7 +47,7 @@ _select_data:
   image-positions:
     - bg-pos-t
     - bg-pos-b
-  background_colors:
+  background_color:
     - bg-red
     - bg-yellow
     - bg-light
@@ -81,4 +81,5 @@ _select_data:
     bg-yellow: Amarillo
     bg-light: Light
     bg-beige: Beige
+  
     

@@ -47,10 +47,8 @@ meal-plans:
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
       aspernatur quod minima ullam ab, in nihil temporibus velit, quae iure
       omnis dignissimos fuga, laudantium a quo alias qui ipsam!
-special-offer_color: '#000000'
 banner-why_image: /images/demo-web10.jpg
 banner-faq_image: /images/demo-web1.jpg
-sign-up_color: '#5a1313'
 ---
 
 <!-- Header & Menu -->
@@ -148,15 +146,7 @@ sign-up_color: '#5a1313'
 
 <!--------------------  BANNER DISCOUNT -------------------->
 
-<section class="center padded {{page.special-offer_color }}">
-  <h3 class="medium-bold uppercase text-light editable" id="order">
-      Order Here
-  </h3>
-  <p class="text-15 text-light editable">
-      You'll get a $10 discount after choosing 5 meals.
-  </p>
-
-</section>
+{% include special-offer.html %}
 
 <!--------------------  SHOP MEALS -------------------->
 
@@ -512,18 +502,5 @@ sign-up_color: '#5a1313'
 
 <!--------------------  SUSCRIBE -------------------->
 
-<section class="center padded {{page.sign-up_color }}">
-  <h3 class="uppercase editable">
-      Subscribe Now
-  </h3>
-  <p class="editable">
-      This one could be connected to your email newsletter, like mailchimp or mailerlite or just a standard email form.
-  </p>
+{% include sign-up.html %}
 
-  <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" />
-    <input type="email" name="_replyto" placeholder="Your Email" />
-    <input type="submit" value="Send" class="button-red" />
-  </form>
-
-</section>
